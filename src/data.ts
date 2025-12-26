@@ -76,6 +76,22 @@ export const PRODUCTS: Product[] = [
     subtitle: 'Perfect for pickles',
     variants: variantsVolume,
   },
+  {
+    id: 'o3',
+    name: 'Cold Pressed Coconut Oil',
+    category: Category.OILS,
+    image: 'https://images.unsplash.com/photo-1590779033100-9f60a05a013d?q=80&w=400&auto=format&fit=crop',
+    subtitle: 'Pure wood pressed, unrefined',
+    variants: variantsVolume,
+  },
+  {
+    id: 'o4',
+    name: 'Cold Pressed Sunflower Oil',
+    category: Category.OILS,
+    image: 'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?q=80&w=400&auto=format&fit=crop',
+    subtitle: 'Traditionally wood pressed',
+    variants: variantsVolume,
+  },
   // Pickles
   {
     id: 'p1',
