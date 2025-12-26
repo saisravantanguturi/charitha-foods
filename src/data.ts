@@ -6,9 +6,11 @@ const variantsWeight = [
   { id: 'v3', label: '1kg' },
 ];
 
+// UPDATED: Added the 5L variant here
 const variantsVolume = [
   { id: 'vol1', label: '500ml' },
   { id: 'vol2', label: '1L' },
+  { id: 'vol3', label: '5L' }, 
 ];
 
 const variantsPack = [
@@ -59,7 +61,7 @@ export const PRODUCTS: Product[] = [
     subtitle: 'Traditional butter murukulu',
     variants: variantsWeight,
   },
-  // Oils
+  // Oils - These all now include 500ml, 1L, and 5L
   {
     id: 'o1',
     name: 'Cold Pressed Groundnut Oil',
