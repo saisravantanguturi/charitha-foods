@@ -147,7 +147,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'hg3',
-    name: 'Wild Forest Honey',
+    name: 'Pure Honey',
     category: Category.HONEY_GHEE,
     image: 'https://picsum.photos/id/312/400/400',
     subtitle: 'Raw and unprocessed',
