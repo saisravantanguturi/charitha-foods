@@ -1,5 +1,5 @@
 import { Product, Category } from './types';
-import honeyImage from './honey.jpeg';
+import honeyImage from './honey.png';
 const variantsWeight = [
   { id: 'v1', label: '250g' },
   { id: 'v2', label: '500g' },
