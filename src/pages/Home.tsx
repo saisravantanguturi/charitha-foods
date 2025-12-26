@@ -4,6 +4,9 @@ import { ArrowRight, Star, Heart, CheckCircle, ChevronRight, Droplet, ChefHat } 
 import { CATEGORIES_LIST, PRODUCTS } from '../data';
 import ProductCard from '../components/ProductCard';
 
+// 1. Import your local hero image from the src folder
+import kitchenHero from '../hero-kitchen.png';
+
 const Home: React.FC = () => {
   const navigate = useNavigate();
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -11,7 +14,8 @@ const Home: React.FC = () => {
   const slides = [
     {
       id: 1,
-      image: "https://picsum.photos/id/106/1920/1080",
+      // 2. Use the imported local image variable here
+      image: kitchenHero,
       title: "Traditional Foods Made by Women",
       subtitle: "No sugar. Only organic bellam (jaggery).",
       cta: "View Products",
@@ -70,13 +74,14 @@ const Home: React.FC = () => {
             </div>
           </div>
         ))}
-        {/* Dots */}
+
+        {/* Manual Navigation Dots - Still active and functional */}
         <div className="absolute bottom-6 left-0 right-0 z-30 flex justify-center gap-2">
           {slides.map((_, idx) => (
             <button
               key={idx}
               onClick={() => setCurrentSlide(idx)}
-              className={`w-2 h-2 rounded-full transition-all ${idx === currentSlide ? 'bg-white w-6' : 'bg-white/50'}`}
+              className={`w-2 h-2 rounded-full transition-all ${idx === currentSlide ? 'bg-white w-6' : 'bg-white/50 hover:bg-white'}`}
             />
           ))}
         </div>
