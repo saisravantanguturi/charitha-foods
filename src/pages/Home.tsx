@@ -6,6 +6,7 @@ import ProductCard from '../components/ProductCard';
 
 // 1. Import your local hero image from the src folder
 import kitchenHero from '../hero-kitchen.png';
+import productsHero from '../hero-products.png';
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
