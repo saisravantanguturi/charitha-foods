@@ -75,8 +75,18 @@ const Home: React.FC = () => {
         ))}
         {/* ... Dots and rest of section ... */}
       </section>
-      {/* ... Other sections ... */}
-    </div>
+      {/* Dots - Enhanced for visibility */}
+<div className=\"absolute bottom-8 left-0 right-0 z-30 flex justify-center gap-3\">
+  {slides.map((_, idx) => (
+    <button
+      key={idx}
+      onClick={() => setCurrentSlide(idx)}
+      className={`w-3 h-3 rounded-full transition-all shadow-md border border-black/10 ${
+        idx === currentSlide ? 'bg-accent w-8' : 'bg-white/60 hover:bg-white'
+      }`}
+    />
+  ))}
+</div>
   );
 };
 
