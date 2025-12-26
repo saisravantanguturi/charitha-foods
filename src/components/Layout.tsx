@@ -48,7 +48,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   Charitha Foods
                 </span>
                 <span className="text-[10px] sm:text-xs text-accent uppercase tracking-widest font-bold">
-                  Since 2024
+                  Since 2020
                 </span>
               </div>
             </Link>
