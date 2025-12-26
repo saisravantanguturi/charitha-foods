@@ -7,6 +7,8 @@ import ProductCard from '../components/ProductCard';
 // 1. Import your local hero image from the src folder
 import kitchenHero from '../hero-kitchen.png';
 import productsHero from '../hero-products.png';
+import orderHero from '../hero-order.png';
+
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
@@ -32,7 +34,7 @@ const Home: React.FC = () => {
     },
     {
       id: 3,
-      image: "https://picsum.photos/id/225/1920/1080",
+      image: orderHero,
       title: "Order via WhatsApp",
       subtitle: "Pan-India delivery available.",
       cta: "Start Ordering",
