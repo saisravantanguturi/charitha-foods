@@ -1,5 +1,5 @@
 import { Product, Category } from './types';
-
+import honeyImage from './honey.jpg';
 const variantsWeight = [
   { id: 'v1', label: '250g' },
   { id: 'v2', label: '500g' },
@@ -149,7 +149,7 @@ export const PRODUCTS: Product[] = [
     id: 'hg3',
     name: 'Pure Honey',
     category: Category.HONEY_GHEE,
-    image: 'https://picsum.photos/id/312/400/400',
+    image: honeyImage,
     subtitle: 'Raw and unprocessed',
     variants: variantsWeight,
   },
