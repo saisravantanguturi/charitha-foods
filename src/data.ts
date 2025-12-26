@@ -137,8 +137,16 @@ export const PRODUCTS: Product[] = [
     subtitle: 'Bilona method',
     variants: variantsWeight,
   },
-  {
+{
     id: 'hg2',
+    name: 'Pure Buffalo Ghee',
+    category: Category.HONEY_GHEE,
+    image: 'https://picsum.photos/id/225/400/400',
+    subtitle: 'Bilona method',
+    variants: variantsWeight,
+  },
+  {
+    id: 'hg3',
     name: 'Wild Forest Honey',
     category: Category.HONEY_GHEE,
     image: 'https://picsum.photos/id/312/400/400',
