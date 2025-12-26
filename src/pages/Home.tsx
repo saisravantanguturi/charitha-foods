@@ -23,7 +23,7 @@ const Home: React.FC = () => {
     },
     {
       id: 2,
-      image: "https://picsum.photos/id/112/1920/1080",
+      image: productsHero,
       title: "Cold-Pressed Oils & Bilona Ghee",
       subtitle: "Made using grandma’s traditional methods.",
       cta: "Order Now",
