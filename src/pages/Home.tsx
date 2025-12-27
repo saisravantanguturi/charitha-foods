@@ -17,7 +17,6 @@ const Home: React.FC = () => {
   const slides = [
     {
       id: 1,
-      // 2. Use the imported local image variable here
       image: kitchenHero,
       title: "Traditional Foods Made by Women",
       subtitle: "No sugar. Only organic bellam (jaggery).",
@@ -78,7 +77,6 @@ const Home: React.FC = () => {
           </div>
         ))}
 
-        {/* Manual Navigation Dots - Still active and functional */}
         <div className="absolute bottom-6 left-0 right-0 z-30 flex justify-center gap-2">
           {slides.map((_, idx) => (
             <button
@@ -124,7 +122,8 @@ const Home: React.FC = () => {
           {CATEGORIES_LIST.map((cat) => (
             <Link 
               key={cat.id} 
-              to={`/products?category=${cat.id}`}
+              // FIXED: Added encodeURIComponent here so Spices & Honey work from Home Page
+              to={`/products?category=${encodeURIComponent(cat.id)}`}
               className="group relative h-48 sm:h-64 rounded-xl overflow-hidden cursor-pointer"
             >
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors z-10"></div>
