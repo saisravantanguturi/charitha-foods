@@ -51,7 +51,7 @@ const Home: React.FC = () => {
     <div className="flex flex-col gap-12 pb-12">
       
       {/* IMPROVED HERO SECTION: Responsive aspect ratio to prevent cropping */}
-      <section className="relative w-full aspect-[16/9] sm:aspect-[21/9] md:h-[600px] overflow-hidden bg-primary">
+      <section className="relative w-full aspect-[4/5] sm:aspect-[16/9] md:h-[600px] overflow-hidden bg-primary">
         {slides.map((slide, index) => (
           <div 
             key={slide.id}
