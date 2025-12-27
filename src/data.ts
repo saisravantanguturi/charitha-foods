@@ -9,7 +9,7 @@ import PuthalaKaramPodi from './Puthala-Karam-Podi.png';
 import NallaKaramPodi from './Nalla-Karam-Podi.png';
 import PancharatnaKaramPodi from './Pancharatna-Karam-Podi.png';
 import KooraKaramPodi from './Koora-Karam-Podi.png';
-
+import GonguraPickle from './Gongura-Pickle.png';
 
 
 const variantsPowderWeight = [
@@ -125,7 +125,7 @@ export const PRODUCTS: Product[] = [
     id: 'p2',
     name: 'Gongura Pickle',
     category: Category.PICKLES,
-    image: 'https://picsum.photos/id/30/400/400',
+    image: GonguraPickle,
     subtitle: 'Spicy sorrel leaves',
     variants: variantsWeight,
   },
