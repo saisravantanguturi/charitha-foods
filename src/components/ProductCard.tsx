@@ -53,7 +53,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         <div className="mt-auto pt-2 sm:pt-4 space-y-2">
           <div className="bg-cream rounded-lg p-1.5 sm:p-2 space-y-2">
             
-            {/* Variant Selector - Scrollable on mobile if many */}
+            {/* Variant Selector */}
             <div className="flex flex-wrap gap-1">
               {product.variants.map((variant) => (
                 <button
@@ -70,34 +70,34 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
               ))}
             </div>
 
-            {/* Quantity & Add Button Row - Responsive Layout */}
-            <div className="flex flex-col xs:flex-row items-stretch gap-1.5 sm:gap-2">
-              {/* Quantity Controls - Narrower for mobile */}
-              <div className="flex items-center justify-between bg-white rounded-md border border-gray-200 h-7 sm:h-8">
+            {/* Quantity & Add Button Row - Now stacks vertically on mobile */}
+            <div className="flex flex-col gap-2">
+              {/* Quantity Controls - Full width on mobile */}
+              <div className="flex items-center justify-between bg-white rounded-md border border-gray-200 h-8">
                 <button 
                   onClick={handleDecrement}
-                  className="w-7 sm:w-8 h-full flex items-center justify-center text-gray-500 hover:text-primary transition-colors"
+                  className="w-full h-full flex items-center justify-center text-gray-500 hover:text-primary transition-colors border-r border-gray-100"
                 >
-                  <Minus className="w-2.5 h-2.5" />
+                  <Minus className="w-3 h-3" />
                 </button>
-                <span className="text-[10px] sm:text-xs font-bold text-primary">{quantity}</span>
+                <span className="w-full text-center text-[11px] sm:text-xs font-bold text-primary">{quantity}</span>
                 <button 
                   onClick={handleIncrement}
-                  className="w-7 sm:w-8 h-full flex items-center justify-center text-gray-500 hover:text-primary transition-colors"
+                  className="w-full h-full flex items-center justify-center text-gray-500 hover:text-primary transition-colors border-l border-gray-100"
                 >
-                  <Plus className="w-2.5 h-2.5" />
+                  <Plus className="w-3 h-3" />
                 </button>
               </div>
 
-              {/* Add Button - Full width on tiny screens */}
+              {/* Add Button - Larger and full width */}
               <button 
                 onClick={handleAdd}
-                className={`flex-1 ${isAdded ? 'bg-green-600' : 'bg-accent hover:bg-[#b89565]'} text-white text-[10px] sm:text-xs font-bold h-7 sm:h-8 rounded-md flex items-center justify-center gap-1 transition-all duration-300 active:scale-95`}
+                className={`w-full ${isAdded ? 'bg-green-600' : 'bg-accent hover:bg-[#b89565]'} text-white text-[10px] sm:text-xs font-bold h-9 sm:h-10 rounded-md flex items-center justify-center gap-1 transition-all duration-300 active:scale-95 shadow-sm`}
               >
                 {isAdded ? (
-                  <><Check className="w-2.5 h-2.5 sm:w-3 sm:h-3" /> ADDED</>
+                  <><Check className="w-3 h-3 sm:w-4 sm:h-4" /> ADDED</>
                 ) : (
-                  <><ShoppingBag className="w-2.5 h-2.5 sm:w-3 sm:h-3" /> ADD</>
+                  <><ShoppingBag className="w-3 h-3 sm:w-4 sm:h-4" /> ADD</>
                 )}
               </button>
             </div>
