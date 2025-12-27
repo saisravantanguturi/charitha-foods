@@ -58,7 +58,7 @@ export const CartProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
         }];
       }
     });
-    setIsBasketOpen(true);
+    // Line removed: setIsBasketOpen(true);
   };
 
   const removeFromCart = (productId: string, variantId: string) => {

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Product } from '../types';
 import { useCart } from '../context/CartContext';
-import { Plus, Minus, ShoppingBag } from 'lucide-react';
+import { Plus, Minus, ShoppingBag, Check } from 'lucide-react'; // Added Check icon
 
 interface ProductCardProps {
   product: Product;
@@ -11,13 +11,18 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const { addToCart } = useCart();
   const [selectedVariant, setSelectedVariant] = useState(product.variants[0].id);
   const [quantity, setQuantity] = useState(1);
+  const [isAdded, setIsAdded] = useState(false); // State to track success animation
 
   const handleIncrement = () => setQuantity(q => q + 1);
   const handleDecrement = () => setQuantity(q => Math.max(1, q - 1));
 
   const handleAdd = () => {
     addToCart(product, selectedVariant, quantity);
+    setIsAdded(true); // Start animation
     setQuantity(1); // Reset quantity after adding
+    
+    // Reset the button back to "ADD" after 2 seconds
+    setTimeout(() => setIsAdded(false), 2000);
   };
 
   return (
@@ -87,13 +92,22 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                 </button>
               </div>
 
-              {/* Add Button */}
+              {/* Add Button with Animation */}
               <button 
                 onClick={handleAdd}
-                className="flex-1 bg-accent hover:bg-[#b89565] text-white text-xs font-bold h-8 rounded-md flex items-center justify-center gap-1 transition-colors shadow-sm active:transform active:scale-95"
+                className={`flex-1 ${isAdded ? 'bg-green-600' : 'bg-accent hover:bg-[#b89565]'} text-white text-xs font-bold h-8 rounded-md flex items-center justify-center gap-1 transition-all duration-300 shadow-sm active:transform active:scale-95`}
               >
-                <ShoppingBag className="w-3 h-3" />
-                ADD
+                {isAdded ? (
+                  <>
+                    <Check className="w-3 h-3" />
+                    ADDED
+                  </>
+                ) : (
+                  <>
+                    <ShoppingBag className="w-3 h-3" />
+                    ADD
+                  </>
+                )}
               </button>
             </div>
           </div>
