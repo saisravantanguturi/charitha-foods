@@ -6,7 +6,7 @@ const AnimatedLogo: React.FC = () => {
   // Oval Dimensions for SVG viewBox="0 0 200 200"
   const imageClipPath = "M 25, 100 a 75, 50 0 1, 1 150, 0 a 75, 50 0 1, 1 -150, 0";
   const textPath = "M 12, 100 a 88, 63 0 1, 1 176, 0 a 88, 63 0 1, 1 -176, 0";
-  const rotatingText = "CHARITHA FOODS • TRADITIONAL • AUTHENTIC • BEST QUALITY • ";
+  const rotatingText = "CHARITHA FOODS • TRADITION • AUTHENTIC • BEST QUALITY • ";
 
   return (
     <div className="relative w-24 h-24 sm:w-28 sm:h-28 group cursor-pointer shrink-0 -my-4">
