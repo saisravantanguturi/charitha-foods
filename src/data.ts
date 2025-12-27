@@ -8,6 +8,8 @@ import KandiKaramPodi from './Kandi-Karam-Podi.png';
 import PuthalaKaramPodi from './Puthala-Karam-Podi.png';
 import NallaKaramPodi from './Nalla-Karam-Podi.png';
 import PancharatnaKaramPodi from './Pancharatna-Karam-Podi.png';
+import KooraKaramPodi from './Koora-Karam-Podi.png';
+
 
 
 const variantsPowderWeight = [
@@ -174,6 +176,14 @@ export const PRODUCTS: Product[] = [
     category: Category.SPICES,
     image: PancharatnaKaramPodi,
     subtitle: 'Five Jewels Spicy Powder',
+    variants: variantsPowderWeight,
+  },
+  {
+    id: 'sp7',
+    name: 'Koora Karam Podi',
+    category: Category.SPICES,
+    image: KooraKaramPodi,
+    subtitle: 'Curry Spices Powder',
     variants: variantsPowderWeight,
   },
   // Honey Ghee
