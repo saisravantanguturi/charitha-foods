@@ -3,6 +3,9 @@ import honeyImage from './honey.png';
 import BufgheeImage from './buf-ghee.png';
 import CowgheeImage from './cow-ghee.png';
 import DhaniyalaKaramPodi from './Dhaniyala-Karam-Podi.png';
+import KarivepaakuKaramPodi from './Karivepaaku-Karam-Podi.png';
+
+
 
 const variantsPowderWeight = [
   { id: 'va1', label: '100g' },
@@ -134,7 +137,7 @@ export const PRODUCTS: Product[] = [
     id: 'sp2',
     name: 'Karivepaku Karam Podi',
     category: Category.SPICES,
-    image: 'https://picsum.photos/id/365/400/400',
+    image: KarivepaakuKaramPodi,
     subtitle: 'Curry leaf powder',
     variants: variantsPowderWeight,
   },
