@@ -2,7 +2,13 @@ import { Product, Category } from './types';
 import honeyImage from './honey.png';
 import BufgheeImage from './buf-ghee.png';
 import CowgheeImage from './cow-ghee.png';
+import DhaniyalaKaramPodi from './Dhaniyala-Karam-Podi.png';
 
+const variantsPowderWeight = [
+  { id: 'va1', label: '100g' },
+  { id: 'va2', label: '250g' },
+  { id: 'va3', label: '500g' },
+];
 
 const variantsWeight = [
   { id: 'v1', label: '250g' },
@@ -118,19 +124,19 @@ export const PRODUCTS: Product[] = [
   // Spices
   {
     id: 'sp1',
-    name: 'Sambar Powder',
+    name: 'Dhaniyala Karam Podi',
     category: Category.SPICES,
-    image: 'https://picsum.photos/id/306/400/400',
-    subtitle: 'Homemade blend',
-    variants: variantsWeight,
+    image: DhaniyalaKaramPodi,
+    subtitle: 'Spiced Coriander Powder',
+    variants: variantsPowderWeight,
   },
   {
     id: 'sp2',
-    name: 'Karivepaku Karam',
+    name: 'Karivepaku Karam Podi',
     category: Category.SPICES,
     image: 'https://picsum.photos/id/365/400/400',
     subtitle: 'Curry leaf powder',
-    variants: variantsWeight,
+    variants: variantsPowderWeight,
   },
   // Honey Ghee
   {
