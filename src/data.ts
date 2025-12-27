@@ -4,7 +4,7 @@ import BufgheeImage from './buf-ghee.png';
 import CowgheeImage from './cow-ghee.png';
 import DhaniyalaKaramPodi from './Dhaniyala-Karam-Podi.png';
 import KarivepaakuKaramPodi from './Karivepaaku-Karam-Podi.png';
-
+import KandiKaramPodi from './Kandi-Karam-Podi.png';
 
 
 const variantsPowderWeight = [
@@ -138,7 +138,15 @@ export const PRODUCTS: Product[] = [
     name: 'Karivepaku Karam Podi',
     category: Category.SPICES,
     image: KarivepaakuKaramPodi,
-    subtitle: 'Curry leaf powder',
+    subtitle: 'Curry leaf spices powder',
+    variants: variantsPowderWeight,
+  },
+  {
+    id: 'sp3',
+    name: 'Kandi Karam Podi',
+    category: Category.SPICES,
+    image: KandiKaramPodi,
+    subtitle: 'Toor Dal Spice Powder',
     variants: variantsPowderWeight,
   },
   // Honey Ghee
