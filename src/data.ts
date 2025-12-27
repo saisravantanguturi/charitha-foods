@@ -1,5 +1,5 @@
 import { Product, Category } from './types';
-import honeyImage from './honey.jpg'; // Fixed extension to match your folder
+import honeyImage from './honey.png';
 import BufgheeImage from './buf-ghee.png';
 import CowgheeImage from './cow-ghee.png';
 
@@ -10,10 +10,16 @@ const variantsWeight = [
   { id: 'v3', label: '1kg' },
 ];
 
+// UPDATED: Added the 5L variant here
 const variantsVolume = [
   { id: 'vol1', label: '500ml' },
   { id: 'vol2', label: '1L' },
   { id: 'vol3', label: '5L' }, 
+];
+
+const variantsPack = [
+  { id: 'p1', label: 'Small Pack' },
+  { id: 'p2', label: 'Family Pack' },
 ];
 
 export const PRODUCTS: Product[] = [
@@ -59,7 +65,7 @@ export const PRODUCTS: Product[] = [
     subtitle: 'Traditional butter murukulu',
     variants: variantsWeight,
   },
-  // Oils
+  // Oils - These all now include 500ml, 1L, and 5L
   {
     id: 'o1',
     name: 'Cold Pressed Groundnut Oil',
@@ -135,7 +141,7 @@ export const PRODUCTS: Product[] = [
     subtitle: 'Bilona method',
     variants: variantsWeight,
   },
-  {
+{
     id: 'hg2',
     name: 'Pure Buffalo Ghee',
     category: Category.HONEY_GHEE,
