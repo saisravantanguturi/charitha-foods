@@ -6,6 +6,7 @@ import DhaniyalaKaramPodi from './Dhaniyala-Karam-Podi.png';
 import KarivepaakuKaramPodi from './Karivepaaku-Karam-Podi.png';
 import KandiKaramPodi from './Kandi-Karam-Podi.png';
 import PuthalaKaramPodi from './Puthala-Karam-Podi.png';
+import NallaKaramPodi from './Nalla-Karam-Podi.png';
 
 
 const variantsPowderWeight = [
@@ -156,6 +157,14 @@ export const PRODUCTS: Product[] = [
     category: Category.SPICES,
     image: PuthalaKaramPodi,
     subtitle: 'Roasted Chana Dal Spice Powder',
+    variants: variantsPowderWeight,
+  },
+  {
+    id: 'sp5',
+    name: 'Nalla Karam Podi',
+    category: Category.SPICES,
+    image: NallaKaramPodi,
+    subtitle: 'Black Spice Powder',
     variants: variantsPowderWeight,
   },
   // Honey Ghee
