@@ -1,6 +1,8 @@
 import { Product, Category } from './types';
 import honeyImage from './honey.png';
 import BufgheeImage from './buf-ghee.png';
+import BufgheeImage from './cow-ghee.png';
+
 
 const variantsWeight = [
   { id: 'v1', label: '250g' },
@@ -135,7 +137,7 @@ export const PRODUCTS: Product[] = [
     id: 'hg1',
     name: 'Pure Cow Ghee',
     category: Category.HONEY_GHEE,
-    image: 'https://picsum.photos/id/225/400/400',
+    image: CowgheeImage,
     subtitle: 'Bilona method',
     variants: variantsWeight,
   },
