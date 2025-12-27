@@ -10,6 +10,10 @@ import NallaKaramPodi from './Nalla-Karam-Podi.png';
 import PancharatnaKaramPodi from './Pancharatna-Karam-Podi.png';
 import KooraKaramPodi from './Koora-Karam-Podi.png';
 import GonguraPickle from './Gongura-Pickle.png';
+import Avakaya from './Avakaya.png';
+import AllamPickle from './Allam-Pickle.png';
+
+
 
 
 const variantsPowderWeight = [
@@ -117,7 +121,7 @@ export const PRODUCTS: Product[] = [
     id: 'p1',
     name: 'Avakaya (Mango Pickle)',
     category: Category.PICKLES,
-    image: 'https://picsum.photos/id/292/400/400',
+    image: Avakaya,
     subtitle: 'New season mangoes',
     variants: variantsWeight,
   },
@@ -127,6 +131,14 @@ export const PRODUCTS: Product[] = [
     category: Category.PICKLES,
     image: GonguraPickle,
     subtitle: 'Spicy sorrel leaves',
+    variants: variantsWeight,
+  },
+  {
+    id: 'p3',
+    name: 'Allam Pickle',
+    category: Category.PICKLES,
+    image: AllamPickle,
+    subtitle: 'Fresh Ginger Pickle',
     variants: variantsWeight,
   },
   // Spices
