@@ -1,7 +1,7 @@
 import { Product, Category } from './types';
 import honeyImage from './honey.png';
 import BufgheeImage from './buf-ghee.png';
-import BufgheeImage from './cow-ghee.png';
+import CowgheeImage from './cow-ghee.png';
 
 
 const variantsWeight = [
