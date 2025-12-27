@@ -50,20 +50,24 @@ const Home: React.FC = () => {
   return (
     <div className="flex flex-col gap-12 pb-12">
       
-      {/* FULL-IMAGE MOBILE HERO: Removed fixed aspect ratio to prevent cropping */}
-      <section className="relative w-full h-[65vh] sm:h-[500px] md:h-[600px] overflow-hidden bg-primary">
+      {/* MOBILE OPTIMIZED HERO: Uses dynamic height based on screen size */}
+      <section className="relative w-full h-[50vh] sm:h-[500px] md:h-[600px] overflow-hidden bg-primary">
         {slides.map((slide, index) => (
           <div 
             key={slide.id}
             className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentSlide ? 'opacity-100' : 'opacity-0'}`}
           >
-            <div className="absolute inset-0 bg-black/30 z-10"></div>
+            {/* Dark overlay for text readability */}
+            <div className="absolute inset-0 bg-black/40 z-10"></div>
             
-            {/* object-contain ensures the WHOLE image is seen without cutting sides */}
+            {/* FIXED IMAGE LOGIC: 
+                - 'object-contain' on mobile ensures the WHOLE image is seen.
+                - 'sm:object-cover' on laptop makes it fill the screen properly.
+            */}
             <img 
               src={slide.image} 
               alt={slide.title} 
-              className="w-full h-full object-cover object-center sm:object-cover" 
+              className="w-full h-full object-contain sm:object-cover object-center" 
             />
             
             <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-6 max-w-4xl mx-auto">
@@ -94,7 +98,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Trust Strip - Adjusted for better mobile spacing */}
+      {/* Trust Strip */}
       <section className="bg-cream -mt-10 sm:-mt-8 relative z-20 max-w-7xl mx-auto w-full px-4">
         <div className="bg-white rounded-xl shadow-xl p-5 sm:p-8 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 border border-primary/5">
           {[
@@ -112,7 +116,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Categories Section */}
+      {/* Categories */}
       <section className="max-w-7xl mx-auto px-4 w-full">
         <div className="flex justify-between items-end mb-8">
           <div>
@@ -156,7 +160,7 @@ const Home: React.FC = () => {
             <p className="text-gray-500 mt-2 text-sm">Traditional taste delivered to your doorstep</p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
              {PRODUCTS.slice(0, 4).map(product => (
                <ProductCard key={product.id} product={product} />
              ))}
