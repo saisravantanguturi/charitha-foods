@@ -10,9 +10,9 @@ import NallaKaramPodi from './Nalla-Karam-Podi.png';
 import PancharatnaKaramPodi from './Pancharatna-Karam-Podi.png';
 import KooraKaramPodi from './Koora-Karam-Podi.png';
 import GonguraPickle from './Gongura-Pickle.png';
-import Avakaya from './Avakaya.png';
+import Avakaya from './Avakaya.png';.
 import AllamPickle from './Allam-Pickle.png';
-
+import Groundnutoil from './Groundnut-oil.png';
 
 
 
@@ -88,7 +88,7 @@ export const PRODUCTS: Product[] = [
     id: 'o1',
     name: 'Cold Pressed Groundnut Oil',
     category: Category.OILS,
-    image: 'https://picsum.photos/id/132/400/400',
+    image: Groundnutoil,
     subtitle: 'Wood pressed, unrefined',
     variants: variantsVolume,
   },
