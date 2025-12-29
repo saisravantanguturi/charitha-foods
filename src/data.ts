@@ -36,6 +36,12 @@ const variantsVolume = [
   { id: 'vol3', label: '5L' }, 
 ];
 
+// UPDATED: Added the 5L variant here
+const variantsoilVolume = [
+  { id: 'oil1', label: '1L' },
+  { id: 'vol2', label: '5L' }, 
+];
+
 
 const variantsPack = [
   { id: 'p1', label: 'Small Pack' },
@@ -92,7 +98,7 @@ export const PRODUCTS: Product[] = [
     category: Category.OILS,
     image: Groundnutoil,
     subtitle: 'Wood pressed, unrefined',
-    variants: variantsVolume,
+    variants: variantsoilVolume,
   },
   {
     id: 'o2',
@@ -100,7 +106,7 @@ export const PRODUCTS: Product[] = [
     category: Category.OILS,
     image: 'https://picsum.photos/id/112/400/400',
     subtitle: 'Perfect for pickles',
-    variants: variantsVolume,
+    variants: variantsoilVolume,
   },
   {
     id: 'o3',
@@ -108,7 +114,7 @@ export const PRODUCTS: Product[] = [
     category: Category.OILS,
     image: 'https://images.unsplash.com/photo-1590779033100-9f60a05a013d?q=80&w=400&auto=format&fit=crop',
     subtitle: 'Pure wood pressed, unrefined',
-    variants: variantsVolume,
+    variants: variantsoilVolume,
   },
   {
     id: 'o4',
@@ -116,7 +122,7 @@ export const PRODUCTS: Product[] = [
     category: Category.OILS,
     image: sunfloweroil,
     subtitle: 'Traditionally wood pressed',
-    variants: variantsVolume,
+    variants: variantsoilVolume,
   },
   // Pickles
   {
