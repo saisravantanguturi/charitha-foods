@@ -13,6 +13,7 @@ import GonguraPickle from './Gongura-Pickle.png';
 import Avakaya from './Avakaya.png';
 import AllamPickle from './Allam-Pickle.png';
 import Groundnutoil from './Groundnut-oil.png';
+import sunfloweroil from './sunflower-oil.png';
 
 
 
@@ -113,7 +114,7 @@ export const PRODUCTS: Product[] = [
     id: 'o4',
     name: 'Cold Pressed Sunflower Oil',
     category: Category.OILS,
-    image: 'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?q=80&w=400&auto=format&fit=crop',
+    image: sunfloweroil,
     subtitle: 'Traditionally wood pressed',
     variants: variantsVolume,
   },
