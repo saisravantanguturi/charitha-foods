@@ -10,7 +10,7 @@ import NallaKaramPodi from './Nalla-Karam-Podi.png';
 import PancharatnaKaramPodi from './Pancharatna-Karam-Podi.png';
 import KooraKaramPodi from './Koora-Karam-Podi.png';
 import GonguraPickle from './Gongura-Pickle.png';
-import Avakaya from './Avakaya.png';.
+import Avakaya from './Avakaya.png';
 import AllamPickle from './Allam-Pickle.png';
 import Groundnutoil from './Groundnut-oil.png';
 
@@ -34,6 +34,7 @@ const variantsVolume = [
   { id: 'vol2', label: '1L' },
   { id: 'vol3', label: '5L' }, 
 ];
+
 
 const variantsPack = [
   { id: 'p1', label: 'Small Pack' },
