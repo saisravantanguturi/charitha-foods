@@ -34,8 +34,8 @@ const Contact: React.FC = () => {
               <MapPin className="w-6 h-6" />
             </div>
             <div>
-              <p className="text-sm text-gray-500 uppercase font-bold tracking-wide">Kitchen Address</p>
-              <p className="text-lg text-primary">Plot 45, Green Valley, Hyderabad, India</p>
+              <p className="text-sm text-gray-500 uppercase font-bold tracking-wide">Address</p>
+              <p className="text-lg text-primary">Piduguralla, Palnadu, Andhra Pradesh, India</p>
             </div>
           </div>
 
@@ -45,7 +45,7 @@ const Contact: React.FC = () => {
              </div>
              <div>
                <p className="text-sm text-gray-500 uppercase font-bold tracking-wide">Working Hours</p>
-               <p className="text-lg text-primary">Mon - Sat: 9:00 AM - 7:00 PM</p>
+               <p className="text-lg text-primary">Mon - Sat: 9:00 AM - 8:00 PM</p>
              </div>
            </div>
 
